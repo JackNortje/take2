@@ -70,30 +70,30 @@ body {
         }
 
         .socials {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    bottom: 50;
-    position: fixed;
-    li {
-        list-style: none;
-    }
-    img {
-        height: 25px;
-        width: 25px;
-        margin-top: 40px;
-        &:hover {
-            transform: 10s;
-            width: 30px;
-            height: 30px;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            bottom: 50;
+            position: fixed;
+            li {
+                list-style: none;
+            }
+            img {
+                height: 25px;
+                width: 25px;
+                margin-top: 40px;
+                &:hover {
+                    transform: 10s;
+                    width: 30px;
+                    height: 30px;
+                }
+                
+            }
         }
         
-    }
-}
-
 
 
 //Intro section
@@ -166,7 +166,15 @@ body {
         line-height: 20px;
     }
     ul {
-        margin: auto;
+        
+        display: flex;
+        justify-content: space-between;
+        margin-right: 30px;
+        img{
+            
+            width: 50px;
+            height: 50px;
+        }
     }
     li {
         list-style: none;
@@ -195,6 +203,7 @@ body {
         padding-left: 40px;
         padding-right: 40px;
         position: fixed;
+        z-index: 100;
         h3 {
             font-size: 40px;
         }
@@ -263,7 +272,9 @@ body {
     .text {
         display: flex;
         flex-direction: column;
+        text-align: left;
         margin-right: 20px;
+        margin-left: 130px;
         width: 100%;
         background-color: $navcolor;
         .aboutMe {
@@ -272,23 +283,36 @@ body {
         }
         p {
             height: auto;
-            align-items: flex-start;
             font-size: 20px;
             color: $primaryColor;
         }
         ul {
             font-size: 20px;
+            display: flex;
+            flex-direction: row;
         }
     }
     .portPic {
         background-color: $navcolor;
-        width: 100%;
+        width: 90%;
         margin-left: 10px;
+        margin-top: 100px;
         .picture {
             height: auto;
             width: 100%;
-
             align-self: center;
+            filter: grayscale(1);
+            transition: filter 2s;
+            &:hover {
+                filter: grayscale(0);
+                transition: filter 2s;
+                transform: scale(1.03);
+                transition: transform 1s;
+                top: 5px;
+                bottom: 5px;
+                left: 5px;
+                right: 5px;
+            }
             
             
         }

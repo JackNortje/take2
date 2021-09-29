@@ -200,7 +200,18 @@ a.nav-btn {
 }
 
 .about ul {
-  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 30px;
+}
+
+.about ul img {
+  width: 50px;
+  height: 50px;
 }
 
 .about li {
@@ -239,6 +250,7 @@ a.nav-btn {
     padding-left: 40px;
     padding-right: 40px;
     position: fixed;
+    z-index: 100;
   }
   .main-nav h3 {
     font-size: 40px;
@@ -331,7 +343,9 @@ a.nav-btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: left;
     margin-right: 20px;
+    margin-left: 130px;
     width: 100%;
     background-color: #00000e;
   }
@@ -341,19 +355,24 @@ a.nav-btn {
   }
   .about .text p {
     height: auto;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     font-size: 20px;
     color: #e5e5dc;
   }
   .about .text ul {
     font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .about .portPic {
     background-color: #00000e;
-    width: 100%;
+    width: 90%;
     margin-left: 10px;
+    margin-top: 100px;
   }
   .about .portPic .picture {
     height: auto;
@@ -361,6 +380,30 @@ a.nav-btn {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    -webkit-transition: -webkit-filter 2s;
+    transition: -webkit-filter 2s;
+    transition: filter 2s;
+    transition: filter 2s, -webkit-filter 2s;
+  }
+  .about .portPic .picture:hover {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    -webkit-transition: -webkit-filter 2s;
+    transition: -webkit-filter 2s;
+    transition: filter 2s;
+    transition: filter 2s, -webkit-filter 2s;
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
