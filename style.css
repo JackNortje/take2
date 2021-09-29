@@ -90,9 +90,6 @@ a.nav-btn {
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
-  margin: 0;
-  padding: 0;
-  bottom: 50;
   position: fixed;
 }
 
@@ -233,6 +230,10 @@ a.nav-btn {
   margin-top: 30px;
 }
 
+.contact {
+  display: none;
+}
+
 @media (min-width: 767px) {
   .main-nav {
     height: 100px;
@@ -290,27 +291,26 @@ a.nav-btn {
   }
   .intro .intro-text h1 {
     margin-left: 200px;
+    margin-top: 100px;
     font-weight: 350px;
-    font-size: 25px;
+    font-size: 20px;
   }
   .intro .intro-text h2 {
     margin-left: 200px;
-    font-size: 80px;
+    font-size: 70px;
     margin-top: 10px;
   }
   .intro .intro-text h3 {
     margin-left: 200px;
-    font-size: 40px;
+    font-size: 35px;
     margin-top: -50px;
   }
   .intro .intro-text .info-p {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    font-size: 20px;
+        -ms-flex-direction: left;
+            flex-direction: left;
+    font-size: 18px;
     line-height: 20px;
     margin-left: 200px;
   }
@@ -332,7 +332,6 @@ a.nav-btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 40px;
     background-color: #00000e;
   }
   .about .text {
@@ -355,7 +354,7 @@ a.nav-btn {
   }
   .about .text p {
     height: auto;
-    font-size: 20px;
+    font-size: 18px;
     color: #e5e5dc;
   }
   .about .text ul {
@@ -404,6 +403,52 @@ a.nav-btn {
     bottom: 5px;
     left: 5px;
     right: 5px;
+  }
+  .contact {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 300px;
+  }
+  .contact h2 {
+    color: snow;
+  }
+  .contact ul {
+    color: white;
+  }
+  .contact .tab {
+    overflow: hidden;
+    width: 470px;
+    color: #edff64;
+    border: 1px solid #edff64;
+  }
+  .contact .tab button {
+    color: #edff64;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  .contact .tablinks {
+    background-color: #00000e;
+  }
+  .contact .tablinks:hover {
+    background-color: #edff64;
+    color: #00000e;
+  }
+  .contact .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
