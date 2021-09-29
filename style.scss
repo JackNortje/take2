@@ -1,0 +1,300 @@
+
+$primaryColor: #e5e5dc;
+$navcolor: #00000e;
+$greenText: #edff64;
+$secondaryTextColor: black;
+$orange: #c66b3d;
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: $navcolor;
+}
+
+
+        //NAVBAR
+        .main-nav{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $navcolor;
+            
+        }
+        
+        h3 {
+            font-size: 50px;
+            color: $primaryColor;
+            
+        }
+        
+        .nav-list {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+           li{
+                font-size: 15px;
+                list-style: none;
+                color: $greenText;
+        
+                a {
+                    text-decoration: none;
+                    font-size: 17px;
+                    color: $primaryColor;
+                    &:hover {
+                        cursor: pointer;
+                        color: $greenText;
+                        
+                    }
+                }
+            }
+        
+        }
+        a.nav-btn {
+                height: 50px;
+                width: 110px;
+                border-radius: 10px;
+                background-color: $navcolor;
+                border: 3px $greenText solid;
+                color: $greenText;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                    
+        }
+
+        .socials {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    bottom: 50;
+    position: fixed;
+    li {
+        list-style: none;
+    }
+    img {
+        height: 25px;
+        width: 25px;
+        margin-top: 40px;
+        &:hover {
+            transform: 10s;
+            width: 30px;
+            height: 30px;
+        }
+        
+    }
+}
+
+
+
+//Intro section
+
+
+.intro-text {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $navcolor;
+    color: $primaryColor;
+    
+    h1 {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: -15px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: center;
+    }
+    .github-projects {
+        height: 30px;
+        width: 130px;
+        border-radius: 10px;
+        background-color: $navcolor;
+        border: 3px $greenText solid;
+        color: $greenText;
+        margin-top: 10px;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 10px;
+        &:hover {
+            cursor: pointer;
+            background-color: $greenText;
+            color: black;
+        }
+    }
+}
+
+//About Section
+
+
+
+.about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: $primaryColor;
+    background-color: $navcolor;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+    ul {
+        margin: auto;
+    }
+    li {
+        list-style: none;
+        text-align: center;
+    }
+    
+}
+.picture {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+
+@media (min-width: 767px) {
+
+    .main-nav{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+        position: fixed;
+        h3 {
+            font-size: 40px;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: 20px;
+            li {
+                margin-right: 30px;
+            }
+        }
+        .nav-btn {
+            margin-right: 60px;
+        }
+    }
+.intro {
+    height: 100vh;
+    width: 100%;
+    .intro-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1 {
+            margin-left: 200px;
+            font-weight: 350px;
+            font-size: 25px;
+        }
+        h2 {
+            margin-left: 200px;
+            font-size: 80px;
+            margin-top: 10px;
+        }
+        h3{
+            margin-left: 200px;
+            font-size: 40px;
+            margin-top: -50px;
+        }
+        .info-p {
+            flex-direction: row;
+            align-self: flex-start;
+            font-size: 20px;
+            line-height: 20px;
+            margin-left: 200px;
+        }
+    }
+    .github-projects {
+        margin-left: 200px;
+        &:hover {
+            background-color: $greenText;
+            color: black;
+            cursor: pointer;
+        }
+    }
+}
+    
+
+.about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    background-color: $navcolor;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        width: 100%;
+        background-color: $navcolor;
+        .aboutMe {
+            font-size: 40px;
+            font-weight: 500;
+        }
+        p {
+            height: auto;
+            align-items: flex-start;
+            font-size: 20px;
+            color: $primaryColor;
+        }
+        ul {
+            font-size: 20px;
+        }
+    }
+    .portPic {
+        background-color: $navcolor;
+        width: 100%;
+        margin-left: 10px;
+        .picture {
+            height: auto;
+            width: 100%;
+
+            align-self: center;
+            
+            
+        }
+    }
+}
+   
+
+
+}
