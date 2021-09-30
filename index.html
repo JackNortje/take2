@@ -15,9 +15,9 @@
                     <h3 class="heading">Jack.</h3>
                 
                     <ul class="nav-list">
-                        <li>01. <a href=".about"> About</a></li>
-                        <li>02. <a href=".devWork"> Dev Work</a></li>
-                        <li>03. <a href=".contact"> Contact</a></li>
+                        <li>01. <a href="#about">About</a></li>
+                        <li>02. <a href="#work-timeline">Dev Work</a></li>
+                        <li>03. <a href=".contact">Contact</a></li>
                     </ul>
                 
                     <a href="./RESUME/J,Nortje resume 2021.pdf" target="_blank" class="nav-btn">Resume</a>
@@ -29,7 +29,7 @@
         
         
         
-        <section class="intro wow animate__animated animate__fadeInLeftBig ">
+        <section class="intro">
             <div class="intro-text">
                 <h1>Howzit! welcome to the portfolio page of</h1>
                 <h2>Jack Liam Nortje,</h2>
@@ -58,7 +58,7 @@
         
 
         
-        <section class="about">
+        <section class="about" id="about">
             
             
 
@@ -99,12 +99,13 @@
                 </div>
         </section> 
 
-        <section class="contact">
+        <section class="work-timeline" id="work-timeline">
     
             <h2>Work experince</h2>
             
             <div class="buttons">
             <div class="tab">
+                <button class="tablinks" onclick="workPlace(event, 'Front')">Front End</button>
               <button class="tablinks" onclick="workPlace(event, 'Film')">Film Industry</button>
               <button class="tablinks" onclick="workPlace(event, 'Photography')">Photographer</button>
               <button class="tablinks" onclick="workPlace(event, 'Nature')">Nature Conservationist</button>
@@ -112,12 +113,25 @@
             </div>
             
             <div class="writing">
+                <div id="Front" class="tabcontent">
+                    <h3>Front End Web Developer</h3>
+                    <ul>
+                      <li>Started my self taught journey in the middle of 2021 With a Udemy course</li>
+                      <li>I descovered freeCodeCamp and completed the Resposive Web Design course</li>
+                      <li>I then discovered The Odib Poroject and completed the Fondations course</li>
+                      <li>I moved onto the Javascript models on both sites and am now using them in conjenction with eachother</li>
+                      
+                      
+                  </ul>
+                  </div>
+
             <div id="Film" class="tabcontent">
               <h3>Film Industry</h3>
               <ul>
                 <li>Worked on Produnction teams on many international production shoots.</li>
                 <li>Worked closely with Production Manager on the organisation of all shoot logistics</li>
                 <li>Worked closely with international production companies to create a great shoot.</li>
+                <li>Assiting all departments on shoot days</li>
                
             </ul>
             </div>
@@ -125,8 +139,9 @@
             <div id="Photography" class="tabcontent">
               <h3>Photographer</h3>
               <ul>
-                <li>Worked with many different clients to achieve what they wanted</li>
-                <li>Shot models and products</li>
+                <li>Photographed both models and behind the scenes</li>
+                <li>Worked with many different clients to achieve exactly what they asked for mixed with my creative abilities.</li>
+                <li>Scouted locations that I thought suited the brief</li>
                 <li>Post production</li>
             </ul>
             </div>
@@ -135,7 +150,9 @@
               <h3>Nature Conservationist</h3>
               <ul>
                 <li>Managing field ranger teams during work hours</li>
-                <li></li>
+                <li>Conducted Environmental Education workshops for the younger generations</li>
+                <li>Attended monthly reserve meetings with the pubic</li>
+                <li>Work on the fireline on both Ecological burns and Wildfires</li>
             </ul>
             </div>
             </div>

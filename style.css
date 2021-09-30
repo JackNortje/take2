@@ -1,7 +1,9 @@
-body {
-  margin-right: 25px;
+html, body {
+  width: 100vw;
   font-family: sans-serif;
   background-color: #00000e;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .main-nav {
@@ -131,6 +133,8 @@ a.nav-btn {
           align-items: center;
   background-color: #00000e;
   color: #e5e5dc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .intro-text h1 {
@@ -233,19 +237,23 @@ a.nav-btn {
   margin-top: 30px;
 }
 
-.contact {
+.work-timeline {
   display: none;
 }
 
 @media (min-width: 767px) {
-  body {
-    margin-right: 40px;
+  html, body {
     font-family: sans-serif;
-    background-color: #00000e;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .main-nav {
     height: 100px;
-    width: 100%;
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -256,13 +264,13 @@ a.nav-btn {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-top: -10px;
     position: fixed;
     z-index: 100;
   }
   .main-nav h3 {
     font-size: 40px;
+    margin-left: 20px;
   }
   .main-nav ul {
     display: -webkit-box;
@@ -283,7 +291,7 @@ a.nav-btn {
   }
   .intro {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
   }
   .intro .intro-text {
     display: -webkit-box;
@@ -296,34 +304,26 @@ a.nav-btn {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding-left: 200px;
+    width: 900px;
   }
   .intro .intro-text h1 {
-    margin-left: 200px;
     margin-top: 100px;
     font-weight: 350px;
     font-size: 20px;
   }
   .intro .intro-text h2 {
-    margin-left: 200px;
     font-size: 70px;
     margin-top: 10px;
   }
   .intro .intro-text h3 {
-    margin-left: 200px;
     font-size: 35px;
     margin-top: -50px;
   }
   .intro .intro-text .info-p {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: left;
-            flex-direction: left;
     font-size: 18px;
     line-height: 20px;
-    margin-left: 200px;
-  }
-  .intro .github-projects {
-    margin-left: 200px;
+    text-align: left;
   }
   .intro .github-projects:hover {
     background-color: #edff64;
@@ -335,6 +335,7 @@ a.nav-btn {
   }
   .about {
     height: 100vh;
+    width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -346,7 +347,13 @@ a.nav-btn {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #00000e;
-    margin-left: 100px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about .aboutMe {
+    margin-top: 50px;
   }
   .about .text {
     display: -webkit-box;
@@ -357,15 +364,15 @@ a.nav-btn {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: left;
-    width: 100%;
+    width: 50vw;
     background-color: #00000e;
+    margin-right: 10px;
   }
   .about .text .aboutMe {
     font-size: 40px;
     font-weight: 500;
   }
   .about .text p {
-    height: auto;
     font-size: 18px;
     color: #e5e5dc;
   }
@@ -381,10 +388,9 @@ a.nav-btn {
   }
   .about .portPic {
     background-color: #00000e;
-    width: 90%;
+    width: 50vw;
     margin-left: 10px;
     margin-top: 100px;
-    margin-right: 100px;
   }
   .about .portPic .picture {
     height: auto;
@@ -417,7 +423,7 @@ a.nav-btn {
     left: 5px;
     right: 5px;
   }
-  .contact {
+  .work-timeline {
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -428,19 +434,21 @@ a.nav-btn {
             flex-direction: column;
     margin-left: 300px;
   }
-  .contact h2 {
+  .work-timeline h2 {
     color: snow;
+    margin-top: 100px;
   }
-  .contact ul {
+  .work-timeline ul {
     color: white;
+    line-height: 30px;
   }
-  .contact .tab {
+  .work-timeline .tab {
     overflow: hidden;
-    width: 470px;
+    width: 580px;
     color: #edff64;
     border: 1px solid #edff64;
   }
-  .contact .tab button {
+  .work-timeline .tab button {
     color: #edff64;
     float: left;
     border: none;
@@ -451,14 +459,14 @@ a.nav-btn {
     transition: 0.3s;
     font-size: 17px;
   }
-  .contact .tablinks {
+  .work-timeline .tablinks {
     background-color: #00000e;
   }
-  .contact .tablinks:hover {
+  .work-timeline .tablinks:hover {
     background-color: #edff64;
     color: #00000e;
   }
-  .contact .tabcontent {
+  .work-timeline .tabcontent {
     display: none;
     padding: 6px 12px;
     border-top: none;

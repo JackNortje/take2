@@ -11,3 +11,4 @@ function workPlace(evt, industryName) {
     document.getElementById(industryName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
