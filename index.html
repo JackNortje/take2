@@ -3,6 +3,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -11,16 +15,17 @@
         
         <header>
             
-                <nav class="main-nav">
-                    <h3 class="heading">Jack.</h3>
+                <nav class="main-nav animate__fadeIn">
+                    <h3 class="heading"><a href="#intro">Jack.</a></h3>
                 
                     <ul class="nav-list">
-                        <li>01. <a href="#about">About</a></li>
-                        <li>02. <a href="#work-timeline">Dev Work</a></li>
-                        <li>03. <a href=".contact">Contact</a></li>
+                        <li class="animate__fadeIn">01. <a href="#about">About</a></li>
+                        <li class="animate__fadeIn">02. <a href="#work-timeline">Work Timeline</a></li>
+                        <li class="animate__fadeIn">03. <a href="#projects">Course Projects</a></li>
+                        <li class="animate__fadeIn">04. <a href="#contact">Contact</a></li>
                     </ul>
                 
-                    <a href="./RESUME/J,Nortje resume 2021.pdf" target="_blank" class="nav-btn">Resume</a>
+                    <a href="./RESUME/J,Nortje resume 2021.pdf" target="_blank" class="nav-btn animate__fadeIn">Resume</a>
             
             </nav>
         </header>
@@ -29,7 +34,7 @@
         
         
         
-        <section class="intro">
+        <section class="intro animate__fadeIn" id="into">
             <div class="intro-text">
                 <h1>Howzit! welcome to the portfolio page of</h1>
                 <h2>Jack Liam Nortje,</h2>
@@ -38,12 +43,12 @@
                 
                     I am currently focussing on all things front end, using the internet as my resource. 
                 </p>
-                <a href="https://github.com/JackNortje" class="github-projects" target="_blank">Recent projects</a>
+                <a href="https://github.com/JackNortje" class="github-projects" target="_blank">Github Repos</a>
             </div>
           
         </section>
 
-        <div class="socials">
+        <div class="socials animate__fadeIn">
             <ul>
                 <li><a href="https://github.com/JackNortje" target="_blank"><img src="./imgs/social-media-54.png" alt="github"></a></li>
                 <li><a href="https://www.linkedin.com/in/jack-nortje-99425315a/" target="_blank"><img src="./imgs/link.png" alt=""></a></li>
@@ -58,7 +63,7 @@
         
 
         
-        <section class="about" id="about">
+        <section class="about animate__fadeIn" id="about">
             
             
 
@@ -99,9 +104,9 @@
                 </div>
         </section> 
 
-        <section class="work-timeline" id="work-timeline">
+        <section class="work-timeline animate__fadeIn" id="work-timeline">
     
-            <h2>Work experince</h2>
+            <h2>02. Work Timeline</h2>
             
             <div class="buttons">
             <div class="tab">
@@ -116,10 +121,10 @@
                 <div id="Front" class="tabcontent">
                     <h3>Front End Web Developer</h3>
                     <ul>
-                      <li>Started my self taught journey in the middle of 2021 With a Udemy course</li>
-                      <li>I descovered freeCodeCamp and completed the Resposive Web Design course</li>
-                      <li>I then discovered The Odib Poroject and completed the Fondations course</li>
-                      <li>I moved onto the Javascript models on both sites and am now using them in conjenction with eachother</li>
+                      <li>Started my self taught journey in the middle of 2021 With a Udemy course and havent looked back since</li>
+                      <li>I descovered freeCodeCamp and completed the Resposive Web Design Course</li>
+                      <li>I then discovered The Odin Project and completed the Fondations Course</li>
+                      <li>I moved onto the Javascript models on both sites and am now using them in conjunction with eachother</li>
                       
                       
                   </ul>
@@ -159,7 +164,90 @@
             
             </section>
 
+
+
+            <section class="Projects animate__fadeIn" id="projects">
+                <h2 class="cprojects">02. Course Projects</h2>
+                <div class="grid-container">
+                    
+                    <a href="https://jacknortje.github.io/web-dev/" target="_blank">
+                        <img src="./projectimages/landingpage.png" alt="landing page">
+                        <h4>My first landing page</h4>
+                        <p>Html5, css3</p>
+                    </a>
+                    
+                    
+                    <a href="https://jacknortje.github.io/cape-town-best-beaches/" target="_blank">
+                        <img src="./projectimages/beaches.png" alt="beaches">
+                        <h4>Cape Town Beaches</h4>
+                        <p>Html5, css3</p>
+                    </a>
+                    
+                    
+                    <a href="https://jacknortje.github.io/jacks-bicycle-shop/" target="_blank">
+                        <img src="./projectimages/bikeinfo.png" alt="bike info page">
+                        <h4>Jack's Bike Shop</h4>
+                        <p>Html5, css3</p>
+                    </a>
+                      
+                    
+                    <a href="https://jacknortje.github.io/fedsa-responsive-design/" target="_blank">
+                        <img src="./projectimages/fedsa.png" alt="fedsa project">
+                        <h4>FEDSA Dev Project</h4>
+                        <p>Html5, css3, Figma</p>
+                    </a>
+                    
+                    
+                    <a href="https://jacknortje.github.io/TOP_BlackJack/" target="_blank">
+                        <img src="./projectimages/blackjack.png" alt="blackjack">
+                        <h4>First JS game</h4>
+                        <p>Html5, css3, Javascript</p>
+                    </a>
+                    
+                    
+                    
+                    <a href="https://jacknortje.github.io/book-library/" target="_blank">
+                        <img src="./projectimages/library.png" alt="library">
+                        <h4>Book Library</h4>
+                        <p>Html5, css3, Javascript</p>
+                    </a>
+                      
+                    
+                    <a href="https://jacknortje.github.io/block-game/" target="_blank">
+                        <img src="./projectimages/blockgame.png" alt="block game">
+                        <h4>Pixel Drawing Game</h4>
+                        <p>Html5, css3, Javascript</p>
+                    </a>
+                    
+                    
+                    <a href="https://jacknortje.github.io/calculator-top/" target="_blank">
+                        <img src="./projectimages/calculator.png" alt="calculator">
+                        <h4>Calculator</h4>
+                        <p>Html5, css3, Javascript</p>
+                    </a>
+                    
+                    <a href="https://jacknortje.github.io/tictactoe/" target="_blank">
+                        <img src="./projectimages/osandxs.png" alt="landing page">
+                        <h4>X's and O's</h4>
+                        <p>Html5, css3, Javascript</p>
+                    </a> 
+                  </div>
+                  
+            </section>
+
+            <section class="contact animate__fadeIn" id="contact">
+                <h2>03. Contact</h2>
+                    <p>i am currently looking for a position as a junior developer so if you have any
+                        questions, please do get in touch.
+                    </p>
+                    <a href="mailto:jacknortje24@gmail.com"><button>Contact</button></a>
+            </section>
+
+            
     </div>
+    <footer>
+        <h2 class="bottom">Designed & Created by Jack Nortje</h2>
+    </footer>
     <script src="./main.js"></script>
 </body>
 </html>

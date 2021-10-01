@@ -1,7 +1,7 @@
 html, body {
-  width: 100vw;
+  width: 99vw;
   font-family: sans-serif;
-  background-color: #00000e;
+  background-color: #00000c;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -22,12 +22,22 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #00000e;
+  background-color: #00000c;
 }
 
 h3 {
   font-size: 50px;
   color: #e5e5dc;
+}
+
+h3 a {
+  text-decoration: none;
+  color: #e5e5dc;
+}
+
+h3 a:hover {
+  cursor: pointer;
+  color: #edff64;
 }
 
 .nav-list {
@@ -66,7 +76,7 @@ a.nav-btn {
   height: 50px;
   width: 110px;
   border-radius: 10px;
-  background-color: #00000e;
+  background-color: #00000c;
   border: 3px #edff64 solid;
   color: #edff64;
   display: -webkit-box;
@@ -131,7 +141,7 @@ a.nav-btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #00000e;
+  background-color: #00000c;
   color: #e5e5dc;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -162,7 +172,7 @@ a.nav-btn {
   height: 30px;
   width: 130px;
   border-radius: 10px;
-  background-color: #00000e;
+  background-color: #00000c;
   border: 3px #edff64 solid;
   color: #edff64;
   margin-top: 10px;
@@ -192,7 +202,7 @@ a.nav-btn {
           justify-content: center;
   text-align: center;
   color: #e5e5dc;
-  background-color: #00000e;
+  background-color: #00000c;
   margin-top: 200px;
   margin-bottom: 100px;
 }
@@ -241,6 +251,10 @@ a.nav-btn {
   display: none;
 }
 
+.Projects {
+  display: none;
+}
+
 @media (min-width: 767px) {
   html, body {
     font-family: sans-serif;
@@ -250,6 +264,14 @@ a.nav-btn {
     height: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+  .animate__fadeIn {
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+  }
+  .animate__fadeIn.appear {
+    opacity: 1;
   }
   .main-nav {
     height: 100px;
@@ -346,7 +368,7 @@ a.nav-btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #00000e;
+    background-color: #00000c;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-left: auto;
@@ -365,12 +387,13 @@ a.nav-btn {
             flex-direction: column;
     text-align: left;
     width: 50vw;
-    background-color: #00000e;
+    background-color: #00000c;
     margin-right: 10px;
   }
   .about .text .aboutMe {
     font-size: 40px;
     font-weight: 500;
+    margin-top: 40px;
   }
   .about .text p {
     font-size: 18px;
@@ -387,7 +410,7 @@ a.nav-btn {
             flex-direction: row;
   }
   .about .portPic {
-    background-color: #00000e;
+    background-color: #00000c;
     width: 50vw;
     margin-left: 10px;
     margin-top: 100px;
@@ -437,6 +460,8 @@ a.nav-btn {
   .work-timeline h2 {
     color: snow;
     margin-top: 100px;
+    font-size: 40px;
+    font-weight: 500;
   }
   .work-timeline ul {
     color: white;
@@ -460,16 +485,126 @@ a.nav-btn {
     font-size: 17px;
   }
   .work-timeline .tablinks {
-    background-color: #00000e;
+    background-color: #00000c;
   }
   .work-timeline .tablinks:hover {
     background-color: #edff64;
-    color: #00000e;
+    color: #00000c;
   }
   .work-timeline .tabcontent {
     display: none;
     padding: 6px 12px;
     border-top: none;
+  }
+  .Projects {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100vw;
+  }
+  .Projects .cprojects {
+    color: #e5e5dc;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .Projects .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    background-color: #00000c;
+    padding: 10px;
+  }
+  .Projects .grid-container a {
+    height: 340px;
+    width: 340px;
+    background-color: #00000c;
+    padding: 20px;
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #e5e5dc;
+  }
+  .Projects .grid-container a:hover {
+    cursor: pointer;
+    border: 1px solid #edff64;
+    color: #edff64;
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+  }
+  .Projects .grid-container a img {
+    height: 230px;
+    width: 230px;
+  }
+  .Projects .grid-container a h4 {
+    font-weight: 400;
+  }
+  .Projects .grid-container a p {
+    margin-top: -30px;
+    font-size: 18px;
+  }
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    color: snow;
+    height: 90vh;
+  }
+  .contact h2 {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .contact p {
+    font-size: 20px;
+  }
+  .contact button {
+    background-color: #00000c;
+    color: #edff64;
+    border: 2px solid #edff64;
+    border-radius: 10px;
+    height: 60px;
+    width: 150px;
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 50px;
+  }
+  .contact button:hover {
+    cursor: pointer;
+    background-color: #edff64;
+    color: #00000c;
+  }
+  footer .bottom {
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #838383;
+    font-weight: 200;
   }
 }
 /*# sourceMappingURL=style.css.map */
