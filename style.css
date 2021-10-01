@@ -1,9 +1,19 @@
 html, body {
   width: 99vw;
   font-family: sans-serif;
-  background-color: #00000c;
+  background-color: #fcde67;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.container {
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+}
+
+.container section {
+  scroll-snap-align: start;
 }
 
 .main-nav {
@@ -22,22 +32,22 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #00000c;
+  background-color: #fcde67;
 }
 
 h3 {
   font-size: 50px;
-  color: #e5e5dc;
+  color: #030e12;
 }
 
 h3 a {
   text-decoration: none;
-  color: #e5e5dc;
+  color: #030e12;
 }
 
 h3 a:hover {
   cursor: pointer;
-  color: #edff64;
+  color: #5bccf6;
 }
 
 .nav-list {
@@ -58,27 +68,31 @@ h3 a:hover {
 .nav-list li {
   font-size: 15px;
   list-style: none;
-  color: #edff64;
+  color: #5bccf6;
 }
 
 .nav-list li a {
   text-decoration: none;
   font-size: 17px;
-  color: #e5e5dc;
+  color: #030e12;
 }
 
 .nav-list li a:hover {
   cursor: pointer;
-  color: #edff64;
+  color: #5bccf6;
+}
+
+.nav-list li a:hover .formswift-button {
+  display: none;
 }
 
 a.nav-btn {
   height: 50px;
   width: 110px;
   border-radius: 10px;
-  background-color: #00000c;
-  border: 3px #edff64 solid;
-  color: #edff64;
+  background-color: #fcde67;
+  border: 3px #5bccf6 solid;
+  color: #5bccf6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,8 +155,8 @@ a.nav-btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #00000c;
-  color: #e5e5dc;
+  background-color: #fcde67;
+  color: #030e12;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -172,9 +186,9 @@ a.nav-btn {
   height: 30px;
   width: 130px;
   border-radius: 10px;
-  background-color: #00000c;
-  border: 3px #edff64 solid;
-  color: #edff64;
+  background-color: #fcde67;
+  border: 3px #5bccf6 solid;
+  color: #5bccf6;
   margin-top: 10px;
   text-decoration: none;
   text-align: center;
@@ -183,7 +197,7 @@ a.nav-btn {
 
 .intro-text .github-projects:hover {
   cursor: pointer;
-  background-color: #edff64;
+  background-color: #5bccf6;
   color: black;
 }
 
@@ -201,8 +215,8 @@ a.nav-btn {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  color: #e5e5dc;
-  background-color: #00000c;
+  color: #030e12;
+  background-color: #fcde67;
   margin-top: 200px;
   margin-bottom: 100px;
 }
@@ -252,6 +266,14 @@ a.nav-btn {
 }
 
 .Projects {
+  display: none;
+}
+
+.contact {
+  display: none;
+}
+
+footer {
   display: none;
 }
 
@@ -309,7 +331,7 @@ a.nav-btn {
     margin-right: 30px;
   }
   .main-nav .nav-btn {
-    margin-right: 60px;
+    margin-right: 20px;
   }
   .intro {
     height: 100vh;
@@ -348,7 +370,7 @@ a.nav-btn {
     text-align: left;
   }
   .intro .github-projects:hover {
-    background-color: #edff64;
+    background-color: #5bccf6;
     color: black;
     cursor: pointer;
   }
@@ -368,7 +390,7 @@ a.nav-btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #00000c;
+    background-color: #fcde67;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-left: auto;
@@ -387,7 +409,7 @@ a.nav-btn {
             flex-direction: column;
     text-align: left;
     width: 50vw;
-    background-color: #00000c;
+    background-color: #fcde67;
     margin-right: 10px;
   }
   .about .text .aboutMe {
@@ -397,7 +419,7 @@ a.nav-btn {
   }
   .about .text p {
     font-size: 18px;
-    color: #e5e5dc;
+    color: #030e12;
   }
   .about .text ul {
     font-size: 20px;
@@ -410,7 +432,7 @@ a.nav-btn {
             flex-direction: row;
   }
   .about .portPic {
-    background-color: #00000c;
+    background-color: #fcde67;
     width: 50vw;
     margin-left: 10px;
     margin-top: 100px;
@@ -458,23 +480,26 @@ a.nav-btn {
     margin-left: 300px;
   }
   .work-timeline h2 {
-    color: snow;
+    color: #030e12;
     margin-top: 100px;
     font-size: 40px;
     font-weight: 500;
   }
   .work-timeline ul {
-    color: white;
+    color: #030e12;
     line-height: 30px;
+  }
+  .work-timeline ul li {
+    color: #030e12;
   }
   .work-timeline .tab {
     overflow: hidden;
     width: 580px;
-    color: #edff64;
-    border: 1px solid #edff64;
+    color: #5bccf6;
+    border: 1px solid #5bccf6;
   }
   .work-timeline .tab button {
-    color: #edff64;
+    color: #5bccf6;
     float: left;
     border: none;
     outline: none;
@@ -485,11 +510,11 @@ a.nav-btn {
     font-size: 17px;
   }
   .work-timeline .tablinks {
-    background-color: #00000c;
+    background-color: #fcde67;
   }
   .work-timeline .tablinks:hover {
-    background-color: #edff64;
-    color: #00000c;
+    background-color: #5bccf6;
+    color: #fcde67;
   }
   .work-timeline .tabcontent {
     display: none;
@@ -505,7 +530,7 @@ a.nav-btn {
     width: 100vw;
   }
   .Projects .cprojects {
-    color: #e5e5dc;
+    color: #030e12;
     font-size: 40px;
     font-weight: 500;
   }
@@ -514,24 +539,24 @@ a.nav-btn {
     display: grid;
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
-    background-color: #00000c;
+    background-color: #fcde67;
     padding: 10px;
   }
   .Projects .grid-container a {
     height: 340px;
     width: 340px;
-    background-color: #00000c;
+    background-color: #fcde67;
     padding: 20px;
     margin: 20px;
     font-size: 30px;
     text-align: center;
     text-decoration: none;
-    color: #e5e5dc;
+    color: #030e12;
   }
   .Projects .grid-container a:hover {
     cursor: pointer;
-    border: 1px solid #edff64;
-    color: #edff64;
+    border: 1px solid #5bccf6;
+    color: #5bccf6;
     -webkit-transform: scale(1.03);
             transform: scale(1.03);
     -webkit-transition: -webkit-transform 1s;
@@ -562,7 +587,7 @@ a.nav-btn {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    color: snow;
+    color: #030e12;
     height: 90vh;
   }
   .contact h2 {
@@ -573,9 +598,9 @@ a.nav-btn {
     font-size: 20px;
   }
   .contact button {
-    background-color: #00000c;
-    color: #edff64;
-    border: 2px solid #edff64;
+    background-color: #fcde67;
+    color: #5bccf6;
+    border: 2px solid #5bccf6;
     border-radius: 10px;
     height: 60px;
     width: 150px;
@@ -585,13 +610,14 @@ a.nav-btn {
   }
   .contact button:hover {
     cursor: pointer;
-    background-color: #edff64;
-    color: #00000c;
+    background-color: #5bccf6;
+    color: #fcde67;
   }
-  footer .bottom {
-    height: 10vh;
+  footer {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
+    height: 10vh;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -604,7 +630,6 @@ a.nav-btn {
         -ms-flex-align: center;
             align-items: center;
     color: #838383;
-    font-weight: 200;
   }
 }
 /*# sourceMappingURL=style.css.map */
