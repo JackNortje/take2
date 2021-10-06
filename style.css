@@ -397,7 +397,7 @@ footer {
     margin-right: auto;
   }
   .about .aboutMe {
-    margin-top: 50px;
+    margin-top: 150px;
   }
   .about .text {
     display: -webkit-box;
@@ -557,8 +557,8 @@ footer {
     cursor: pointer;
     border: 1px solid #5bccf6;
     color: #5bccf6;
-    -webkit-transform: scale(1.03);
-            transform: scale(1.03);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     transition: transform 1s;
@@ -613,7 +613,7 @@ footer {
     background-color: #5bccf6;
     color: #fcde67;
   }
-  footer {
+  .bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
